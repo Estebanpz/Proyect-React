@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// imagenes
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './index.css';
 import extintores from "./extintores"
 import NavBar from './components/NavBar';
 import Content from './components/Content';
@@ -9,12 +9,9 @@ function App() {
   return (
     <>
       <NavBar />
-
-      <main className="container">
-        <div className="row">
-          <Content extintores={extintores} />
-          <Contact/>
-        </div>
+      <main>
+        <Content/>
+        <Contact />
       </main>
     </>
 

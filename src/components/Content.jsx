@@ -1,73 +1,102 @@
-import { Fragment } from "react";
-import ScrollReveal from 'scrollreveal'
-
-const Content = ({ extintores }) => {
-    ScrollReveal().reveal('.scroll',{
-        delay:  1000,
-        reset: true
-    })
-    
+const Content = () => {
   return (
-    <>
-      {extintores.map((extintor, index) => (
-        <Fragment key={extintor.id}>
-          {index % 2 === 0 ? (
-            <>
-              <div className="col-md-5 col-sm-5 col-xl-5 col-lg-5 my-4 scroll">
-                <div>
-                  <img
-                    src={extintor.imagen}
-                    className="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-md-7 col-sm-7 col-xl-7 col-lg-7 my-4 scroll">
-                <div className="card-body text-center p-3">
-                  <h3>Extintor de 5 Libras</h3>
-                  <p className="card-text">
-                    <small>{extintor.texto}</small>
-                  </p>
-                  <p className="card-text">
-                    <small>{extintor.texto}</small>
-                  </p>
-                </div>
-              </div>
-            </>
-          ) : (
-            <>
-              <div
-                className="col-md-7 col-sm-7 col-xl-7 col-lg-7 my-4 scroll"
-                key={extintor.id}
-              >
-                <div className="card-body text-center p-3">
-                  <h3>Extintor de 5 Libras</h3>
-                  <p className="card-text">
-                    <small>
-                      {extintor.texto}
-                    </small>
-                  </p>
-                  <p className="card-text">
-                    <small>
-                      {extintor.texto}
-                    </small>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-5 col-sm-5 col-xl-5 col-lg-5 my-4">
-                <div>
-                  <img
-                    src={extintor.imagen}
-                    className="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </>
-          )}
-        </Fragment>
-      ))}
-    </>
+    <div className="container">
+      <div className="container_content">
+        <article className="article">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+            sunt beatae sapiente sed recusandae dolore ex officia repudiandae
+            eum illum, sit placeat temporibus error nulla cupiditate ratione
+            laudantium hic repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+            explicabo iusto! Illo tempore natus nesciunt vitae iure, perferendis
+            error aliquam dolore laboriosam laborum ut minus iste veritatis
+            nulla asperiores accusantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            corporis magnam voluptatem hic odio qui voluptatibus earum aliquam
+            autem. Nulla voluptatem reiciendis ipsum quisquam ullam, dicta
+            accusantium omnis voluptatibus molestiae?
+          </p>
+        </article>
+        <article className="article">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+            sunt beatae sapiente sed recusandae dolore ex officia repudiandae
+            eum illum, sit placeat temporibus error nulla cupiditate ratione
+            laudantium hic repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+            explicabo iusto! Illo tempore natus nesciunt vitae iure, perferendis
+            error aliquam dolore laboriosam laborum ut minus iste veritatis
+            nulla asperiores accusantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            corporis magnam voluptatem hic odio qui voluptatibus earum aliquam
+            autem. Nulla voluptatem reiciendis ipsum quisquam ullam, dicta
+            accusantium omnis voluptatibus molestiae?
+          </p>
+        </article>
+        <article className="article">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+            sunt beatae sapiente sed recusandae dolore ex officia repudiandae
+            eum illum, sit placeat temporibus error nulla cupiditate ratione
+            laudantium hic repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+            explicabo iusto! Illo tempore natus nesciunt vitae iure, perferendis
+            error aliquam dolore laboriosam laborum ut minus iste veritatis
+            nulla asperiores accusantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            corporis magnam voluptatem hic odio qui voluptatibus earum aliquam
+            autem. Nulla voluptatem reiciendis ipsum quisquam ullam, dicta
+            accusantium omnis voluptatibus molestiae?
+          </p>
+        </article>
+      </div>
+
+      <aside className="sidebar">
+        <div>
+          <img src="http://placekitten.com/300/200" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+            optio.
+          </p>
+        </div>
+        <div>
+          <img src="http://placekitten.com/300/200" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+            optio.
+          </p>
+        </div>
+        <div>
+          <img src="http://placekitten.com/300/200" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+            optio.
+          </p>
+        </div>
+      </aside>
+
+      <div className="posts">Another Post</div>
+      <div className="posts">Another Post</div>
+      <div className="posts">Another Post</div>
+      <div className="posts">Another Post</div>
+      <div className="posts">Another Post</div>
+    </div>
   );
 };
 
